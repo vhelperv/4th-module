@@ -1,0 +1,138 @@
+<?php
+/**
+ * Implements hook_schema().
+ * Creating a module table markup.
+ */
+function helper_schema() {
+  $schema['helper_data'] = [
+    'description' => 'Table for storing data from the form',
+    'fields' => [
+      'id' => [
+        'description' => 'Holds the id',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ],
+      'uuid' => [
+        'description' => 'Universally unique identifier.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+      ],
+      'tid' => [
+        'type' => 'int',
+        'length' => 100,
+        'not null' => TRUE,
+        'description' => 'Table ID.',
+      ],
+      'year' => [
+        'type' => 'int',
+        'length' => 4,
+        'not null' => TRUE,
+        'description' => 'Year row table.',
+      ],
+      'january' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'January value row table.',
+      ],
+      'february' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'February value row table.',
+      ],
+      'march' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'March value row table.',
+      ],
+      'quarter1' => [
+        'type' => 'float',
+        'length' => 18,
+        'description' => 'Quarter 1 value row table.',
+      ],
+      'april' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'April value row table.',
+      ],
+      'may' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'May value row table.',
+      ],
+      'june' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'June value row table.',
+      ],
+      'quarter2' => [
+        'type' => 'float',
+        'length' => 18,
+        'description' => 'Quarter 2 value row table.',
+      ],
+      'july' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'July value row table.',
+      ],
+      'august' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'August value row table.',
+      ],
+      'september' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'September value row table.',
+      ],
+      'quarter3' => [
+        'type' => 'float',
+        'length' => 18,
+        'description' => 'Quarter 3 value row table.',
+      ],
+      'october' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'October value row table.',
+      ],
+      'november' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'November value row table.',
+      ],
+      'december' => [
+        'type' => 'float',
+        'length' => 14,
+        'description' => 'December value row table.',
+      ],
+      'quarter4' => [
+        'type' => 'float',
+        'length' => 18,
+        'description' => 'Quarter 4 value row table.',
+      ],
+      'ytd' => [
+        'type' => 'float',
+        'length' => 20,
+        'description' => 'YTD value row table.',
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'Timestamp of when the record was created.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+
+// Deleting created tables when uninstalling the module
+function helper_uninstall() {
+  \Drupal::state()->delete('helper_data');
+}
