@@ -79,3 +79,4 @@ class FormTableRow extends FormBase {
   }
 
 }
+

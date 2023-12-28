@@ -120,3 +120,4 @@ class HelperEntity extends ContentEntityBase implements ContentEntityInterface {
   }
 
 }
+

@@ -5,9 +5,8 @@
     .year-table {
       & > tbody {
         & > tr {
-          & > th {
-            width: 70px;
-            max-width: 130px;
+          & > td {
+            min-width: 100px;
             padding: 7px;
           }
         }

@@ -20,12 +20,16 @@ class HelperController extends ControllerBase {
       'Jul', 'Aug', 'Sep', 'Q3',
       'Oct', 'Nov', 'Dec', 'Q4', 'YTD',
     ];
+    // Get the form instance.
     $form = \Drupal::formBuilder()->getForm(FormTableRow::class);
+
     return [
       '#theme' => 'table-page',
       '#header' => $header,
       '#form' => $form,
     ];
+
   }
 
 }
+
