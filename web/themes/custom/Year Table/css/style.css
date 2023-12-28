@@ -1,0 +1,9 @@
+.table-block .gin-table-scroll-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .table-block .gin-table-scroll-wrapper .year-table > tbody > tr > th {
+    width: 70px;
+    max-width: 130px;
+    padding: 7px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhYmxlL3RhYmxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFSSxnQkFBZ0I7RUFDaEIsaUJBQWlCLEVBQUE7RUFIckI7SUFRWSxXQUFXO0lBQ1gsZ0JBQWdCO0lBQ2hCLFlBQVksRUFBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGFibGUtYmxvY2sge1xuICAuZ2luLXRhYmxlLXNjcm9sbC13cmFwcGVyIHtcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xuICAgIHBhZGRpbmctYm90dG9tOiAwO1xuICAgIC55ZWFyLXRhYmxlIHtcbiAgICAgICYgPiB0Ym9keSB7XG4gICAgICAgICYgPiB0ciB7XG4gICAgICAgICAgJiA+IHRoIHtcbiAgICAgICAgICAgIHdpZHRoOiA3MHB4O1xuICAgICAgICAgICAgbWF4LXdpZHRoOiAxMzBweDtcbiAgICAgICAgICAgIHBhZGRpbmc6IDdweDtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */

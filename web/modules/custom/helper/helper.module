@@ -9,6 +9,7 @@ function helper_theme($existing, $type, $theme, $path)
     'table-page' => [
       'variables' => [
         'header' => [],
+        'form' => [],
       ],
     ],
   ];

@@ -1,0 +1,17 @@
+.table-block {
+  .gin-table-scroll-wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    .year-table {
+      & > tbody {
+        & > tr {
+          & > th {
+            width: 70px;
+            max-width: 130px;
+            padding: 7px;
+          }
+        }
+      }
+    }
+  }
+}

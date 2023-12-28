@@ -1,3 +1,39 @@
-<table id="year-table">
-  {{ table }}
-</table>
+{# Add a loop to display multiple tables later #}
+<div class="table-block" id="table-block"> {# Later add tid to id #}
+  <div class="gin-table-scroll-wrapper">
+    <table class="year-table" id="year-table"> {# Later add tid to id #}
+      <thead class="year-table__header" id="year-table__header"> {# Later add tid to id #}
+      <tr class="year-table__header-row table-row" id="year-table__header-row"> {# Later add tid to id #}
+        {% for column in header %}
+          <th class="year-table__header-column table-column" id="year-table__header-column">{{ column }}</th> {# Later add tid to id #}
+        {% endfor %}
+      </tr>
+      </thead>
+      {# Add a loop to display multiple rows later #}
+      <tbody class="year-table__body" id="year-table__body"> {# Later add tid to id #}
+      <tr class="year-table__body-row" id="year-table__body-row"> {# Later add id to id #}
+        <th class="year-table__body-row-year" id="row-year">{{ form.year }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-january" id="row-january">{{ form.january }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-february" id="row-february">{{ form.february }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-march" id="row-march">{{ form.march }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-quarter1" id="row-quarter1">{{ form.quarter1 }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-april" id="row-april">{{ form.april }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-may" id="row-may">{{ form.may }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-june" id="row-june">{{ form.june }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-quarter2" id="row-quarter2">{{ form.quarter2 }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-july" id="row-july">{{ form.july }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-august" id="row-august">{{ form.august }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-september" id="row-september">{{ form.september }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-quarter3" id="row-quarter3">{{ form.quarter3 }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-october" id="row-october">{{ form.october }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-november" id="row-november">{{ form.november }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-december" id="row-december">{{ form.december }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-quarter4" id="row-quarter4">{{ form.quarter4 }}</th> {# Later add id to id #}
+        <th class="year-table__body-row-ytd" id="row-ytd">{{ form.ytd }}</th> {# Later add id to id #}
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="add-year" id="add-year__table-">{{ form.add_year }}</div>{# Later add tid to id #}
+</div>
+
