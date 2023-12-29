@@ -1,0 +1,31 @@
+{# Add a loop to display multiple tables later #}
+<div class="table-block" id="table-block"> {# Later add tid to id #}
+  <div class="gin-table-scroll-wrapper">
+    <table class="year-table" id="year-table"> {# Later add tid to id #}
+      <thead class="year-table__header" id="year-table__header"> {# Later add tid to id #}
+        <tr class="year-table__header-row table-row" id="year-table__header-row"> {# Later add tid to id #}
+          {% for column in header %}
+            <th class="year-table__header-column table-column"
+                id="year-table__header-column">{{ column }}
+            </th> {# Later add tid to id #}
+          {% endfor %}
+        </tr>
+      </thead>
+      {# Add a loop to display multiple rows later #}
+      <tbody class="year-table__body" id="year-table__body">
+        <tr class="year-table__body-row" id="year-table__body-row">
+          {% for month in ['year','january', 'february', 'march',
+            'quarter1','april', 'may', 'june', 'quarter2',
+            'july', 'august', 'september', 'quarter3',
+            'october', 'november', 'december', 'quarter4', 'ytd'] %}
+              <td class="year-table__body-row-{{ month }}"
+                  id="row-{{ month }}">{{ form[month] }}
+              </td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="add-year" id="add-year__table-">{{ form.add_year }}</div>{# Later add tid to id #}
+</div>
+

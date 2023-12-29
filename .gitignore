@@ -6,6 +6,9 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/db.sql
+/.docksal
+/web/themes/custom/Year Table/node_modules/*
 
 # Ignore local settings
 /web/sites/*/settings.local.php

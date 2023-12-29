@@ -1,0 +1,5 @@
+name: 'Helper'
+description: 'Month-Quarter-Year Table Module'
+package: 'Custom Module'
+type: module
+core_version_requirement: ^10

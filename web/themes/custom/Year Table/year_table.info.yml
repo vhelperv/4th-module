@@ -1,0 +1,15 @@
+name: 'Year Table Theme'
+description: 'Theme for module "helper"'
+type: theme
+core_version_requirement: ^10
+base theme: gin
+
+libraries:
+  - year_table/global
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  highlighted: Highlighted
+  content: Content
+  footer: Footer
